@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vendas.gui.PaineldecontroleController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#BtnInsereProduto" onDragDetected="#InsereProduto" prefHeight="50.0" prefWidth="200.0" text="INSERE FUNCIONARIO" />
+              </buttons>
+            </ButtonBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#BtnInsereFuncionario" onDragDetected="#InsereFuncionario" prefHeight="50.0" prefWidth="200.0" text="INSERE PRODUTO" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+      <TabPane layoutX="217.0" layoutY="2.0" prefHeight="400.0" prefWidth="379.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="fuc">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="307.0" prefWidth="308.0">
+                     <children>
+                        <TableView layoutY="3.0" prefHeight="365.0" prefWidth="379.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
